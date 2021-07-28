@@ -8,12 +8,10 @@
 .container {
     display: flex;
     flex-direction: column;
-    border: var(--b);
-    height: 95vh;
+    height: 100vh;
 }
 .top {
-    flex-basis: 10%;
-    border: var(--b);
+    flex-basis: 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,14 +34,12 @@
     border: 1px solid #fff;
 }
 .middle {
-    flex-basis: 80%;
-    border: var(--b);
+    flex-basis: 83%;
     background: #EFEFEF;
     overflow-y: scroll;
 }
 .bottom {
     flex-basis: 10%;
-    border: var(--b);
     background: var(--blue);
 }
 .post-container {
@@ -136,7 +132,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 3% 0;
+    padding: 5px 0;
 }
 .menu {
     display: flex;
@@ -145,16 +141,14 @@
     align-items: center;
     color: white;
     text-align: center;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
 }
 .menu i {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 .menu:hover {
     color: #2F7EFD;
     background: #fff;
-    padding: 10px;
-    border-radius: 50%;
-}
-.menu:hover .menu-container {
-    
 }
