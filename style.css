@@ -22,6 +22,7 @@
     width:45px;
     border-radius: 50%;
     margin: 12px 10px;
+    cursor: pointer;
 }
 .top img:first-child {
     width: 35px;
