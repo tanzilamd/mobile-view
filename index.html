@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note Book</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="top">
-            <img src="img/notification.png" alt="">
+            <img src="img/notification.png" onclick="userSettings()">
             <h2>Note Book</h2>
-            <img src="img/profile-pic.png" alt="">
-            <div style="display: none;" class="user-settings">
+            <img src="img/profile-pic.png" onclick="userSettings()">
+            <div class="user-settings">
                 <div class="post-header">
                     <img src="img/profile-pic.png" alt="">
                     <div class="user-name">
@@ -22,6 +23,29 @@
                         <a href="#">See your profile</a>
                     </div>
                 </div> <hr>
+                <div class="post-header">
+                    <img src="img/feedback.png" alt="">
+                    <div class="user-name">
+                        <p>Give Feedback</p>
+                        <a href="#">To improve the new design</a>
+                    </div>
+                </div> <hr>
+                <div class="settings-link">
+                    <img src="img/setting.png" alt="">
+                    <a href="#">Settings & Privacy <img src="img/arrow.png" style="width: 15px;"></a>
+                </div>
+                <div class="settings-link">
+                    <img src="img/help.png" alt="">
+                    <a href="#">Help & Support <img src="img/arrow.png" style="width: 15px;"></a>
+                </div>
+                <div class="settings-link">
+                    <img src="img/display.png" alt="">
+                    <a href="#">Display & Accessibility <img src="img/arrow.png" style="width: 15px;"></a>
+                </div>
+                <div class="settings-link">
+                    <img src="img/logout.png" alt="">
+                    <a href="#">Logout <img src="img/arrow.png" style="width: 15px;"></a>
+                </div>
             </div>
         </div>
         <div class="middle">
@@ -91,7 +115,31 @@
                 </div>
             </div>
         </div>
-        <div class="bottom"></div>
+        <div class="bottom">            
+            <div class="menu-container">
+                <div class="menu">
+                    <i class="fas fa-globe-asia"></i>
+                    <p>Course</p>
+                </div>
+                <div class="menu">
+                    <i class="fas fa-blog"></i>
+                    <p>Blog</p>
+                </div>
+                <div class="menu">
+                    <i class="fas fa-home"></i>
+                    <p>Home</p>
+                </div>
+                <div class="menu">
+                    <i class="fas fa-university"></i>
+                    <p>School</p>
+                </div>
+                <div class="menu">
+                    <i class="fas fa-tasks"></i>
+                    <p>Task</p>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

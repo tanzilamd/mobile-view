@@ -90,12 +90,20 @@
 .user-settings {
     background: #fff;
     position: absolute;
-    right: 10px;
-    top: 100px;
+    right: 5%;
+    top: 13%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    padding: 15px 5px;
     border-radius: 4px;
-    width: 60%;
+    width: 70%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s;
+}
+.user-settings-height {
+    max-height: 450px;
+}
+.user-settings .user-name p {
+    font-weight: 500;
 }
 .user-name a {
     text-decoration: none;
@@ -106,5 +114,47 @@
     background: #9a9a9a;
     height: 1px;
     border: 0;
-    margin: 0 15px;
+    margin: 0 10px;
+}
+.settings-link {
+    display: flex;
+    align-items: center;
+}
+.settings-link a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    text-decoration: none;
+    color: #626262;
+    font-size: 15px;
+}
+.settings-link a > img {
+   width : 100px;
+}
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3% 0;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.menu i {
+    margin-bottom: 3px;
+}
+.menu:hover {
+    color: #2F7EFD;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+.menu:hover .menu-container {
+    
 }
